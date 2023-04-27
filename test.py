@@ -7,3 +7,4 @@ picam2.start_preview(Preview.QTGL)
 picam2.start()
 time.sleep(2)
 picam2.capture_file("test.jpg")
+#Test file
