@@ -1,3 +1,5 @@
+# NOT USED
+
 from picamera2 import Picamera2
 from picamera2.encoders import JpegEncoder
 import time
