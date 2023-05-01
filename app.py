@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from picamera2 import PiCamera
+from picamera2 import Picamera2
 from picamera2.encoders import H264Encoder
 from picamera2.outputs import FfmpegOutput
 
