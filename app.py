@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
 piwatch = Picamera2()
 video_config = piwatch.create_video_configuration()
-video_config["framerate"] = 30
-video_config["resolution"] = (640, 480)
-video_config["transform"] = libcamera.Transform(hflip=1, vflip=1)
+piwatch.video_configuration.controls.FrameRate = 25.0
+piwatch.video_configuration.controls.main.size = (640, 480)
+#video_config["transform"] = libcamera.Transform(hflip=1, vflip=1)
 piwatch.configure(video_config)
 
 
