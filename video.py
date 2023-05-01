@@ -12,7 +12,7 @@ encoder = JpegEncoder(q=70)
 def take_picture():
     picam2.capture('/static/images/motion.jpg')
 def start_video():
-    picam2.start_recording(encoder, '/static/images/test.mjpg')
+    picam2.start_recording(encoder, '/static/images/preview.mjpg')
 #picam2.start_recording(encoder, 'test.mjpg')
 def stop_video():
     picam2.stop_recording()
