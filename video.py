@@ -1,5 +1,6 @@
 from picamera2 import Picamera2
 from picamera2.encoders import JpegEncoder
+import time
 
 # Create a camera object
 picam2 = Picamera2()
@@ -11,6 +12,9 @@ encoder = JpegEncoder(q=70)
 
 def take_picture():
     picam2.capture('static/images/motion.jpg')
+    while True:
+        time.sleep(1)
+    camera.stop_recording()
 def start_video():
     picam2.start_recording(encoder, 'static/images/preview.mjpg')
 #picam2.start_recording(encoder, 'test.mjpg')
